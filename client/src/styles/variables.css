@@ -1,0 +1,16 @@
+/* src/styles/variables.css */
+:root {
+    /* Color Variables */
+    --color-primary: #F2CC60;  /* Primary color (Yellow) */
+    --color-secondary: #080808;  /* Secondary color (Dark) */
+    --color-background: #FFFFFF;  /* Background color (White) */
+    --color-hover-primary: #d6b85c; /* Darker shade for primary button hover */
+    --color-hover-secondary: #1a1a1a; /* Slightly lighter shade for secondary button hover */
+    
+    /* Font Variables */
+    --font-family: 'Open Sans', sans-serif; /* Default font family */
+    --font-size-base: 16px;  /* Base font size */
+    --font-size-heading: 24px;  /* Heading font size */
+    --font-color-body: #080808;  /* Body text color */
+    --font-color-heading: #F2CC60;  /* Heading text color */
+}

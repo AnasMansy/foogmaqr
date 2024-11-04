@@ -1,0 +1,179 @@
+/* src/pages/ReportsPage.css */
+
+.reports-container {
+  padding: -5px;
+  background-color: var(--color-background);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 97%;
+}
+
+h2 {
+  text-align: center;
+  color: var(--font-color-body);  /* Using body text color variable */
+  margin-bottom: 20px;
+}
+
+.report-type-selection {
+  position: fixed;
+  left: 0;
+  top: 1px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  background-color: #fff;
+  border-radius: 5px;
+ 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+
+    
+  width: 100%;
+  max-width: 300px;
+}
+
+.report-type-selection,
+.date-range-selection,
+.include-details-selection {
+  background-color: #fff;  /* Keeping this as white for contrast */
+  border-radius: 5px;
+  padding: 57px 2px 0 0;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.type {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+}
+.type label {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #333;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  min-width: 100px;   /* Ensures consistent width */
+  background-color: #fff;  /* White background for contrast */
+}
+
+
+.type label:hover {
+  background-color: #e9ecef;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.type input[type="radio"] {
+  accent-color: var(--color-primary); /* Primary color for the radio button */
+  margin-right: 8px;
+  transform: scale(1.1);
+}
+
+.type input[type="radio"]:checked + label {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+.type label.selected {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.date-range-selection input {
+  width: calc(50% - 10px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.generate-button {
+  background-color: var(--color-primary);  /* Using primary color variable */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  font-size: var(--font-size-base);  /* Using base font size variable */
+  margin-top: 10px;
+}
+
+.generate-button:hover {
+  background-color: var(--color-hover-primary);  /* Using hover color variable */
+}
+
+.report-results {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff;  /* Keeping this as white for contrast */
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.report-results ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.report-results li {
+  margin: 10px 0;
+  padding: 12px;
+  background-color: #f9f9f9;  /* You can consider using a variable for even more consistency */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.report-results li:hover {
+  background-color: #e0e0e0;  /* You can also consider replacing this with a variable */
+}
+
+.charts-container {
+  width: 60%;
+  margin-left: 310px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative; /* Make it relative for positioning pseudo-element */
+    z-index: 1;
+}
+.charts-container::before {
+  content: '';
+  background-image: url('../images/logo.png');  
+  background-size: contain; /* Change to 'contain' or custom size as needed */
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: inherit;
+}
+
+.chart-section {
+  width: 45%;
+}
+ 
+h5{
+  background-color: #c8aeae;
+  padding: 5px;
+  opacity: .5;
+  border-radius: 5px;
+}

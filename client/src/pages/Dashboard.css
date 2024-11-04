@@ -1,0 +1,251 @@
+/* src/pages/Dashboard.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  /* Primary text color */
+}
+
+.dashboard {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--color-background);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.form-section {
+  margin-bottom: 20px;
+  padding: 1px;
+  background-color: #fff;
+  border-radius: 10px;
+  /* Rounded corners */ 
+  /* Subtle shadow */
+  width: 80%;
+}
+
+input {
+  padding: 0;
+}
+
+input[type="text"],
+select {
+  width: calc(100% - 20px);
+
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-hover-primary));
+  /* Gradient background */
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  /* Smooth transition */
+}
+
+button:hover {
+  background: linear-gradient(90deg, var(--color-hover-primary), var(--color-primary));
+  /* Reverse gradient on hover */
+}
+
+
+.data-display {
+  margin-top: 20px;
+}
+
+.building {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.office {
+  margin-left: 20px;
+  border-left: 2px solid #007bff;
+  padding-left: 10px;
+}
+
+
+/* Dashboard.css */
+.dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.form-section {
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.form-section h4 {
+  line-height: 0.5;
+}
+
+.form-section input,
+.form-section select,
+.form-section button {
+
+  margin: 5px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-section button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form-section button:hover {
+  background-color: #45a049;
+}
+
+
+.search-section input {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-section input {
+
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.data-display {
+  margin-top: 20px;
+
+}
+
+.data-display h4 {
+  margin-bottom: 15px;
+}
+
+.displays {
+  width: 75%;
+  margin-left: 400px;
+  min-height: 87vh;
+  position: relative;
+  /* Make it relative for positioning pseudo-element */
+  z-index: 1;
+}
+
+.displays::before {
+  content: '';
+  background-image: url('../images/logo.png');
+  background-size: contain;
+  /* Change to 'contain' or custom size as needed */
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: inherit;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+  /* Light gray for even rows */
+}
+
+table th {
+  background-color: #493434;
+  /* Darker background for header */
+  color: white;
+}
+
+
+table tr:hover {
+  background-color: #f5f5f5;
+}
+
+table tr td button {
+  background-color: var(--color-primary);
+  /* Using primary color variable */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+table tr td button:hover {
+  background-color: var(--color-hover-primary);
+  /* Using hover color variable */
+}
+
+table tr td div {
+  display: flex;
+  align-items: center;
+}
+
+
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+    /* Stack inputs and displays vertically */
+  }
+}
+
+.inputs {
+  position: fixed;
+  left: 0;
+  top: 62px;
+  height: 100%;
+  width: 388px;
+
+  background-color: var(--color-background);
+}
+
+.inputs * {
+  background-color: var(--color-background);
+}
+
+.inputs input {
+  background-color: #c8c8c8;
+}

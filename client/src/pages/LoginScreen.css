@@ -1,0 +1,189 @@
+/* src/components/LoginPage.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 115px;
+}
+
+.title {
+  position: absolute;
+  top: 70px;
+  background: #ffffff;
+  padding: 5px 100px;
+  border-radius: 6px;
+
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0e0e0e 0%, #708871 100%);
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+
+
+}
+
+.description {
+  width: 38%; 
+  color: rgb(255, 255, 255);
+  list-style: none;
+}
+
+/* src/styles/Description.css */
+
+
+
+.description h1 {
+  text-align: center;
+  /* مركز العنوان الرئيسي */
+  color: #00fd15;
+  /* لون داكن للنص */
+  font-size: 2rem;
+  /* حجم خط أكبر */
+  margin-bottom: 15px;
+  /* تباعد أسفل */
+}
+
+.description h2 {
+  color: #eb4fc9; 
+  margin-top: 20px; 
+  margin-bottom: 10px; 
+  font-size: 1.5rem; 
+}
+
+.description p {
+  line-height: 1.6; 
+  color: #ffffff; 
+  margin-bottom: 15px; 
+}
+
+.description ul {
+  list-style-type: none; 
+  padding-left: 20px; 
+}
+
+.description li {
+  margin-bottom: 10px;
+  
+}
+
+
+
+.login-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #777;
+  margin: 5px 0px 0 253px;
+  font-weight: bold;
+
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-group input:focus {
+  border-color: #4caf50;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #1b281b;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #388e3c;
+}
+
+.social-login {
+  margin-top: 30px;
+}
+
+.social-btn {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.google {
+  background-color: #db4437;
+  color: white;
+}
+
+.facebook {
+  background-color: #3b5998;
+  color: white;
+}
+
+.social-btn:hover {
+  opacity: 0.9;
+}
+
+.signup-text {
+  margin-top: 20px;
+  color: #777;
+}
+
+.signup-text a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
